@@ -5,6 +5,10 @@ This app allows you to display line charts of confirmed, deceased and recovered 
 
 **Programming Language:** mat|r script
 
+**Test App:** download the [mat|r Viewer](http://matrproject.com/docs/eng/viewer-eng/), a tool which allows you visualizing and testing the developed app instantly in compatible platforms. Visualize the app on your phone scanning the following QR code with mat|r Viewer:
+
+<img src="Images/qr-charts.png" width="20%" height="20%">
+
 **Author:** Agustina Dinamarca (agustinadinamarca@gmail.com)
 
 <img src="Images/im1.jpg" width="30%" height="30%">
