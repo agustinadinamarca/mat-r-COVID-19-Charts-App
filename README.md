@@ -5,5 +5,7 @@ This app allows you to display line charts of confirmed, deceased and recovered 
 
 **Programming Language:** mat|r script
 
+**Author:** Agustina Dinamarca (agustinadinamarca@gmail.com)
+
 <img src="Images/im1.jpg" width="30%" height="30%">
 <img src="Images/im2.jpg" width="30%" height="30%">
