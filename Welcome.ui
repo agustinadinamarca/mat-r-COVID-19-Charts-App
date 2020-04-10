@@ -1,0 +1,5 @@
+<layout alpha="1" backgroundColor="#FFFFFFFF" fontFamily="Roboto, sans-serif" paddingRight="38" paddingTop="200" paddingBottom="100" paddingLeft="38" name="Welcome">
+    <datasource type="Welcome" name="welcome"/>
+    <image selfAlignment="center" width="150" height="150" bind="welcome.img"/>
+    <label wpercentage="1" alpha="1" marginTop="20" marginBottom="8" marginLeft="0" marginRight="0" paddingRight="2" paddingTop="2" paddingBottom="2" paddingLeft="2" textColor="#475DC9FF" fontFamily="Roboto-Bold" fontSize="40" textAlignment="center" text="Label" bind="welcome.title"/>
+</layout>

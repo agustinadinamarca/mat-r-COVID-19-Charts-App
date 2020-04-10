@@ -1,0 +1,30 @@
+<layout alpha="1" backgroundColor="#FFFFFFFF" fontFamily="Roboto, sans-serif" paddingRight="18" paddingTop="18" paddingBottom="18" paddingLeft="18" name="Main">
+    <datasource type="Main" name="main"/>
+    <navigationBar title="COVID-19 Charts" hideBackButton="false">
+        <leftButtons/>
+        <rightButtons/>
+    </navigationBar>
+    <label wpercentage="1" alpha="1" marginTop="0" marginBottom="0" marginLeft="0" marginRight="0" paddingRight="2" paddingTop="2" paddingBottom="2" paddingLeft="2" textColor="#3d464d" fontFamily="Roboto-Regular" fontSize="15" text="Selecciona al menos un país:"/>
+    <select wpercentage="1" borderColor="#cccccc" borderWidth="1" cornerRadius="3" alpha="1" backgroundColor="#ffffff" fontFamily="Roboto-Regular" fontSize="14" marginTop="0" marginBottom="8" marginLeft="0" marginRight="0" paddingRight="8" paddingTop="8" paddingBottom="8" paddingLeft="8" textColor="#3d464d" bind="main.selectCountries">
+        <event on="OnSelectEvent">
+            <action type="RunRuleAction" ruleContext="MainContext" ruleName="selection"/>
+        </event>
+    </select>
+    <label wpercentage="1" alpha="1" marginTop="0" marginBottom="0" marginLeft="0" marginRight="0" paddingRight="2" paddingTop="2" paddingBottom="2" paddingLeft="2" textColor="#3d464d" fontFamily="Roboto-Regular" fontSize="15" text="Tipo:"/>
+    <select wpercentage="1" borderColor="#cccccc" borderWidth="1" cornerRadius="3" alpha="1" backgroundColor="#ffffff" fontFamily="Roboto-Regular" fontSize="14" marginTop="0" marginBottom="8" marginLeft="0" marginRight="0" paddingRight="8" paddingTop="8" paddingBottom="8" paddingLeft="8" textColor="#3d464d" bind="main.tipo"/>
+    <button wpercentage="0.5" height="40" textAlignment="center" cornerRadius="300" alpha="1" backgroundColor="#475DC9FF" fontSize="15" marginTop="8" marginBottom="8" paddingRight="8" paddingTop="8" paddingBottom="8" paddingLeft="8" textColor="#ffffff" selfAlignment="center" fontFamily="Roboto-Regular" text="Get Chart!">
+        <selectedState/>
+        <highlightedState/>
+        <event on="TapEvent">
+            <action type="RunRuleAction" ruleContext="MainContext" ruleName="getChart"/>
+        </event>
+    </button>
+    <button wpercentage="0.5" height="40" textAlignment="center" cornerRadius="300" borderWidth="0" borderColor="#475DC9FF" alpha="1" backgroundColor="#FFFFFFFF" fontSize="15" marginTop="4" marginBottom="8" paddingRight="8" paddingTop="8" paddingBottom="8" paddingLeft="8" textColor="#475DC9FF" selfAlignment="center" fontFamily="Roboto-Bold" text="Clear">
+        <selectedState/>
+        <highlightedState/>
+        <event on="TapEvent">
+            <action type="RunRuleAction" ruleContext="MainContext" ruleName="clear"/>
+        </event>
+    </button>
+    <image width="300" height="300" selfAlignment="center" bind="main.chart"/>
+</layout>
